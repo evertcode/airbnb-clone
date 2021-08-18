@@ -68,7 +68,7 @@ function Header({ placeholder }) {
         />
       </div>
 
-      {/* middle search*/}
+      {/* middle search */}
       <div className='flex items-center md:border-2 rounded-full py-2 md:shadow-sm'>
         <input
           value={searchInput}
