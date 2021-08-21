@@ -22,18 +22,18 @@ function Search({ searchResults }) {
       <main className='flex'>
         <section className='flex-grow pt-14 px-6'>
           <p className='text-xs'>
-            300+ Stays - {range} - for {noOfGuests} number of guests
+            300+ estancias - {range} - para {noOfGuests} número de invitados
           </p>
           <h1 className='text-3xl font-semibold mt-2 mb-6'>
-            Stays in {location}
+            Estancias en {location}
           </h1>
 
           <div className='hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap'>
-            <p className='button'>Cancellation Flexibility</p>
-            <p className='button'>Type of Place</p>
-            <p className='button'>Price</p>
-            <p className='button'>Rooms and Beds</p>
-            <p className='button'>More filters</p>
+            <p className='button'>Cancelación gratuita</p>
+            <p className='button'>Tipo de lugar</p>
+            <p className='button'>Precio</p>
+            <p className='button'>Recervación inmediata</p>
+            <p className='button'>Más filtros</p>
           </div>
 
           <div className='flex flex-col'>

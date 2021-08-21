@@ -101,7 +101,7 @@ function Header({ placeholder }) {
           />
           <div className='flex items-center border-b mb-4'>
             <h2 className='text-2xl flex-grow font-semibold'>
-              Number of guests
+              Número de invitados
             </h2>
             <UsersIcon className='h-5' />
             <input
@@ -114,10 +114,10 @@ function Header({ placeholder }) {
           </div>
           <div className='flex'>
             <button onClick={resetInput} className='flex-grow text-gray-500'>
-              Cancel
+              Cancelar
             </button>
             <button onClick={handleSearch} className='flex-grow text-red-400'>
-              Search
+              Buscar
             </button>
           </div>
         </div>
