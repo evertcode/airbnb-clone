@@ -61,6 +61,7 @@ function Header({ placeholder }) {
         className='relative flex items-center h-10 cursor-pointer'
       >
         <Image
+          alt='airbnb clone'
           src='https://links.papareact.com/qd3'
           layout='fill'
           objectFit='contain'
@@ -75,14 +76,14 @@ function Header({ placeholder }) {
           onChange={(e) => setSearchInput(e.target.value)}
           className='flex-grow pl-5 bg-transparent outline-none text-gray-600 placeholder-gray-400'
           type='text'
-          placeholder={placeholder || 'Start your search'}
+          placeholder={placeholder || 'Empieza tu búsqueda'}
         />
         <SearchIcon className='h-8 hidden md:inline-flex bg-red-400 text-white rounded-full p-2 cursor-pointer md:mx-2' />
       </div>
 
       {/* right */}
       <div className='flex items-center justify-end space-x-4 text-gray-500'>
-        <p className='hidden md:inline cursor-pointer'>Become a host</p>
+        <p className='hidden md:inline cursor-pointer'>Hazte anfitrión</p>
         <GlobeAltIcon className='h-6 cursor-pointer' />
         <div className='flex items-center space-x-2 border-2 p-2 rounded-full'>
           <MenuIcon className='h-6' />

@@ -26,7 +26,11 @@
     "globals": {
       "fetch": false
     },
-    "extends": "./node_modules/standard/eslintrc.json",
+    "extends": [
+      "./node_modules/standard/eslintrc.json",
+      "eslint:recommended",
+      "next"
+    ],
     "rules": {
       "space-before-function-paren": "off",
       "comma-dangle": "off",
