@@ -16,7 +16,7 @@ const SEO = {
     description,
     images: [
       {
-        url: 'https://airbnb.evertcode.com/airbnb.png',
+        url: 'https://links.evertcode.com/cqo',
         alt: title,
         width: 1200,
         height: 627,
