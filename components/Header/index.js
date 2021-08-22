@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 
 import { DateRangePicker } from 'react-date-range'
+import { es } from 'date-fns/locale'
 
 import {
   GlobeAltIcon,
@@ -62,7 +63,7 @@ function Header({ placeholder }) {
       >
         <Image
           alt='airbnb clone'
-          src='https://links.papareact.com/qd3'
+          src='https://links.evertcode.com/hkj'
           layout='fill'
           objectFit='contain'
           objectPosition='left'
@@ -98,11 +99,10 @@ function Header({ placeholder }) {
             ranges={[selectedRange]}
             minDate={new Date()}
             onChange={handleSelect}
+            locale={es}
           />
           <div className='flex items-center border-b mb-4'>
-            <h2 className='text-2xl flex-grow font-semibold'>
-              Número de invitados
-            </h2>
+            <h2 className='text-2xl flex-grow font-semibold'>Invitados</h2>
             <UsersIcon className='h-5' />
             <input
               value={noOfGuests}

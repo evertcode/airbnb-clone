@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router'
 import { format } from 'date-fns'
+import { es } from 'date-fns/locale'
 
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -10,8 +11,12 @@ function Search({ searchResults }) {
 
   const { location, startDate, endDate, noOfGuests } = router.query
 
-  const formattedStartDate = format(new Date(startDate), 'dd MMMM yy')
-  const formattedEndDate = format(new Date(endDate), 'dd MMMM yy')
+  const formattedStartDate = format(new Date(startDate), 'dd MMMM yy', {
+    locale: es,
+  })
+  const formattedEndDate = format(new Date(endDate), 'dd MMMM yy', {
+    locale: es,
+  })
 
   const range = `${formattedStartDate} - ${formattedEndDate}`
 
@@ -22,8 +27,7 @@ function Search({ searchResults }) {
       <main className='flex'>
         <section className='flex-grow pt-14 px-6'>
           <p className='text-xs'>
-            Más de 300 alojamientos - {range} - para {noOfGuests} número de
-            invitados
+            Más de 300 alojamientos - {range} - para {noOfGuests} invitados
           </p>
           <h1 className='text-3xl font-semibold mt-2 mb-6'>
             Estancias en {location}
