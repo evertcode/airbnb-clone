@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { format } from 'date-fns'
 import { es } from 'date-fns/locale'

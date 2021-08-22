@@ -6,21 +6,24 @@
     "start": "next start"
   },
   "dependencies": {
-    "@badrap/bar-of-progress": "^0.1.2",
+    "@badrap/bar-of-progress": "0.1.2",
     "@heroicons/react": "1.0.3",
     "date-fns": "2.23.0",
     "next": "latest",
-    "react": "^17.0.2",
+    "react": "17.0.2",
     "react-date-range": "1.3.0",
-    "react-dom": "^17.0.2",
-    "tailwind-scrollbar-hide": "^1.0.3"
+    "react-dom": "17.0.2",
+    "tailwind-scrollbar-hide": "1.0.3"
   },
   "devDependencies": {
-    "autoprefixer": "^10.2.6",
-    "eslint-config-next": "^11.1.0",
-    "postcss": "^8.3.5",
+    "autoprefixer": "10.2.6",
+    "eslint-config-next": "11.1.0",
+    "husky": "7.0.1",
+    "lint-staged": "11.1.2",
+    "postcss": "8.3.5",
+    "prettier": "2.3.2",
     "standard": "16.0.3",
-    "tailwindcss": "^2.2.4"
+    "tailwindcss": "2.2.4"
   },
   "eslintConfig": {
     "globals": {
@@ -36,5 +39,14 @@
       "comma-dangle": "off",
       "no-console": "warn"
     }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix",
+    "*.{js,css,md}": "prettier --write"
   }
 }
