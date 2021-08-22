@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { format } from 'date-fns'
 import { es } from 'date-fns/locale'
@@ -29,11 +30,11 @@ function Search({ searchResults }) {
           <p className='text-xs'>
             Más de 300 alojamientos - {range} - para {noOfGuests} invitados
           </p>
-          <h1 className='text-3xl font-semibold mt-2 mb-6'>
+          <h1 className='text-3xl font-semibold mt-4 mb-6'>
             Estancias en {location}
           </h1>
 
-          <div className='hidden lg:inline-flex mb-5 space-x-3 text-gray-800 whitespace-nowrap'>
+          <div className='hidden lg:inline-flex mb-5 pb-3 space-x-3 text-gray-800 whitespace-nowrap'>
             <p className='button'>Cancelación gratuita</p>
             <p className='button'>Tipo de lugar</p>
             <p className='button'>Precio</p>
