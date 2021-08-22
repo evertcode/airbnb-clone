@@ -22,7 +22,8 @@ function Search({ searchResults }) {
       <main className='flex'>
         <section className='flex-grow pt-14 px-6'>
           <p className='text-xs'>
-            300+ estancias - {range} - para {noOfGuests} número de invitados
+            Más de 300 alojamientos - {range} - para {noOfGuests} número de
+            invitados
           </p>
           <h1 className='text-3xl font-semibold mt-2 mb-6'>
             Estancias en {location}
