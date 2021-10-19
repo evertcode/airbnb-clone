@@ -1,5 +1,6 @@
 # Airbnb Clone with Next.js and Tailwind CSS 
 
+![Screen Shot 2021-10-19 at 15 35 53](https://user-images.githubusercontent.com/3246481/137986710-e3e9610d-245b-466b-93b1-90760746a51a.png)
 
 ## Preview
 
